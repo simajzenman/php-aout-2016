@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost:8889
--- Généré le :  Sam 13 Août 2016 à 23:33
+-- Généré le :  Dim 14 Août 2016 à 11:18
 -- Version du serveur :  5.5.42
 -- Version de PHP :  5.6.7
 
@@ -13,8 +13,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `sheraton`
 --
-CREATE DATABASE IF NOT EXISTS `sheraton` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `sheraton`;
 
 -- --------------------------------------------------------
 
