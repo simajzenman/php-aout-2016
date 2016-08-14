@@ -1,4 +1,7 @@
 <?php
+if(!defined('PATTE_BLANCHE')) {
+     die('accès interdit');
+  }
 	include('config.inc.php');
 	include('functions.php');
 

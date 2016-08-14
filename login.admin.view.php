@@ -1,3 +1,8 @@
+<?php
+    if(!defined('PATTE_BLANCHE')) {
+     die('accès interdit');
+  }
+?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

@@ -1,4 +1,7 @@
 <?php
+if(!defined('PATTE_BLANCHE')) {
+     die('accès interdit');
+  }
 	function assain($input){
 		$input = trim(strip_tags($input));
 		return $input;

@@ -1,4 +1,5 @@
 <?php
+	define('PATTE_BLANCHE','accepted');
 	error_reporting(0);
 	session_start();
 ?>

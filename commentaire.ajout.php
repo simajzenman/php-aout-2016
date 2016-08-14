@@ -1,4 +1,5 @@
-<?php  
+<?php
+define('PATTE_BLANCHE','accepted');
   error_reporting(0);
   if ($_POST['pseudo']) {
     die('you are a fucking bot');
