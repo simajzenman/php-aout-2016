@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost:8889
--- Généré le :  Sam 13 Août 2016 à 23:11
+-- Généré le :  Sam 13 Août 2016 à 23:33
 -- Version du serveur :  5.5.42
 -- Version de PHP :  5.6.7
 
@@ -13,6 +13,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `sheraton`
 --
+CREATE DATABASE IF NOT EXISTS `sheraton` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `sheraton`;
 
 -- --------------------------------------------------------
 
@@ -45,6 +47,26 @@ INSERT INTO `commentaires` (`id`, `nom`, `prenom`, `email`, `ip`, `com`, `jour`)
 (13, 'Admin', 'Legrand', '', '::1', 'J''ai fais une bonne affaire', '13 Août 2016'),
 (14, 'Daft', 'Punk', 'daft@punk.com', '::1', 'Work it! Make it! Do it! Makes us!\r\n\r\nHarder! Better! Faster! Stronger!', '13 Août 2016');
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `login` varchar(1024) NOT NULL,
+  `password` varchar(1024) NOT NULL,
+  `role` varchar(1024) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `users`
+--
+
+INSERT INTO `users` (`id`, `login`, `password`, `role`) VALUES
+(1, 'admin', 'toxyS8DP0rCYQ', 'admin');
+
 --
 -- Index pour les tables exportées
 --
@@ -57,6 +79,12 @@ ALTER TABLE `commentaires`
   ADD KEY `id` (`id`);
 
 --
+-- Index pour la table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT pour les tables exportées
 --
 
@@ -65,3 +93,8 @@ ALTER TABLE `commentaires`
 --
 ALTER TABLE `commentaires`
   MODIFY `id` mediumint(9) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=15;
+--
+-- AUTO_INCREMENT pour la table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
