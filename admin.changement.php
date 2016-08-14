@@ -1,7 +1,5 @@
 <?php
-if(!defined('PATTE_BLANCHE')) {
-     die('accès interdit');
-  }
+define('PATTE_BLANCHE','accepted');
 	include ('functions.php');
 
 	$id = $_POST['id'];
